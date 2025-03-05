@@ -1,0 +1,3 @@
+digraph inventory_levels_train {
+	inventory_levels_train [label="{ inventory_levels_train|+Inventory_Year: Integer\l+Inventory_Month: Integer\l+Product_Number: Integer\l+Inventory_Count: Integer\l }" shape=record]
+}

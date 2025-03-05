@@ -1,0 +1,3 @@
+digraph product_forecast_train {
+	product_forecast [label="{ product_forecast|+Product_Number: Integer\l+Year: Integer\l+Month: Integer\l+Expected_volume: Integer\l }" shape=record]
+}

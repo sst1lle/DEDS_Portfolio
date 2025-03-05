@@ -1,0 +1,13 @@
+digraph go_staff_train {
+	Course [label="{ Course|+CourseCode: Integer\l+CourseDescription: String\l }" shape=record]
+	SalesBranch [label="{ SalesBranch|+SalesBranchCode: Integer\l+Address1: String\l+Address2: String\l+City: String\l+Region: String\l+CountryCode: Integer\l }" shape=record]
+	SalesStaff [label="{ SalesStaff|+SalesStaffCode: Integer\l+FirstName: String\l+LastName: String\l+PositionEn: String\l+WorkPhone: String\l+Extension: Integer\l+Fax: String\l+Email: String\l+DateHired: String\l+SalesBranchCode: Integer\l+ManagerCode: Integer\l }" shape=record]
+	Satisfaction [label="{ Satisfaction|+Year: Integer\l+SalesStaffCode: Integer\l+SatisfactionTypeCode: Integer\l }" shape=record]
+	SatisfactionType [label="{ SatisfactionType|+SatisfactionTypeCode: Integer\l+SatisfactionTypeDescription: String\l }" shape=record]
+	Training [label="{ Training|+Year: Integer\l+SalesStaffCode: Integer\l+CourseCode: Integer\l }" shape=record]
+	SalesStaff -> SalesBranch [label=SalesBranchCode]
+	Satisfaction -> SalesStaff [label=SalesStaffCode]
+	Satisfaction -> SatisfactionType [label=SatisfactionTypeCode]
+	Training -> SalesStaff [label=SalesStaffCode]
+	Training -> Course [label=CourseCode]
+}
