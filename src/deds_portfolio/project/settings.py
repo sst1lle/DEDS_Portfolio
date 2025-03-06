@@ -7,7 +7,7 @@ warnings.simplefilter('ignore')
 
 class Settings():
 
-    conn = sqlite3.connect('sql/go_sales_train2.sqlite')
+    conn = sqlite3.connect('data/raw/go_sales_train2.sqlite')
     print("SQLite3 Connection: ",conn)
 
 
