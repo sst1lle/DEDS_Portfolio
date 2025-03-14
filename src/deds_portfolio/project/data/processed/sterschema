@@ -1,0 +1,48 @@
+digraph {
+	Order_Details [label="{ Order_Details | Order_ID \lProduct_ID \lQuantity \lUnit_Cost \lUnit_Price \lUnit_Sale_Price \l}}" fillcolor=lightyellow shape=record style=filled]
+	Returned_Item [label="{ Returned_Item | Return_ID \lOrder_Details_ID \lReturn_Quantity \lReturn_Reason_ID \l}}" fillcolor=lightyellow shape=record style=filled]
+	Sales_Demographic [label="{ Sales_Demographic | Demographic_ID \lRetailer_HQ_ID \lAge_Group_ID \lSales_Percent \l}}" fillcolor=lightyellow shape=record style=filled]
+	Inventory_Levels [label="{ Inventory_Levels | Inventory_ID \lProduct_ID \lInventory_Year \lInventory_Month \lInventory_Count \l}}" fillcolor=lightyellow shape=record style=filled]
+	Product_Forecast [label="{ Product_Forecast | Forecast_ID \lProduct_ID \lForecast_Year \lForecast_Month \lExpected_Volume \l}}" fillcolor=lightyellow shape=record style=filled]
+	Satisfaction [label="{ Satisfaction | Satisfaction_ID \lSales_Staff_ID \lSatisfaction_Type_ID \lSatisfaction_Year \l}}" fillcolor=lightyellow shape=record style=filled]
+	Order_Header [label="{ Order_Header | Order_ID \lOrder_Date \lRetailer_Site_Code \lSales_Staff_Code \lOrder_Method_ID \l}}" fillcolor=lightgreen shape=record style=filled]
+	Product [label="{ Product | Product_ID \lProduct_Name \lProduct_Type_ID \lProduct_Line_ID \l}}" fillcolor=lightgreen shape=record style=filled]
+	Return_Reason [label="{ Return_Reason | Return_Reason_ID \lReturn_Reason_Description \l}}" fillcolor=lightgreen shape=record style=filled]
+	Retailer_Headquarters [label="{ Retailer_Headquarters | Retailer_HQ_ID \lRetailer_ID \lRetailer_Name \l}}" fillcolor=lightgreen shape=record style=filled]
+	Retailer [label="{ Retailer | Retailer_ID \lRetailer_Name \lRetailer_Type_ID \lRetailer_Segment_ID \l}}" fillcolor=lightgreen shape=record style=filled]
+	Retailer_Type [label="{ Retailer_Type | Retailer_Type_ID \lRetailer_Type_Description \l}}" fillcolor=lightgreen shape=record style=filled]
+	Retailer_Segment [label="{ Retailer_Segment | Retailer_Segment_ID \lRetailer_Segment_Description \l}}" fillcolor=lightgreen shape=record style=filled]
+	Country [label="{ Country | Country_ID \lCountry_Name \l}}" fillcolor=lightgreen shape=record style=filled]
+	Sales_Territory [label="{ Sales_Territory | Territory_ID \lTerritory_Name \l}}" fillcolor=lightgreen shape=record style=filled]
+	Age_Group [label="{ Age_Group | Age_Group_ID \lLower_Age \lUpper_Age \l}}" fillcolor=lightgreen shape=record style=filled]
+	Product_Type [label="{ Product_Type | Product_Type_ID \lProduct_Type_Name \l}}" fillcolor=lightgreen shape=record style=filled]
+	Product_Line [label="{ Product_Line | Product_Line_ID \lProduct_Line_Name \l}}" fillcolor=lightgreen shape=record style=filled]
+	Sales_Staff [label="{ Sales_Staff | Sales_Staff_ID \lStaff_Name \lSales_Branch_ID \lCourse_ID \l}}" fillcolor=lightgreen shape=record style=filled]
+	Sales_Branch [label="{ Sales_Branch | Sales_Branch_ID \lBranch_Location \l}}" fillcolor=lightgreen shape=record style=filled]
+	Course [label="{ Course | Course_ID \lCourse_Name \l}}" fillcolor=lightgreen shape=record style=filled]
+	Satisfaction_Type [label="{ Satisfaction_Type | Satisfaction_Type_ID \lSatisfaction_Type_Description \l}}" fillcolor=lightgreen shape=record style=filled]
+	Order_Method [label="{ Order_Method | Order_Method_ID \lOrder_Method_Description \l}}" fillcolor=lightgreen shape=record style=filled]
+	Tijd [label="{ Tijd | Year \lMonth \l}}" fillcolor=lightgreen shape=record style=filled]
+	Order_Details -> Order_Header
+	Order_Details -> Product
+	Returned_Item -> Order_Details
+	Returned_Item -> Return_Reason
+	Sales_Demographic -> Retailer_Headquarters
+	Sales_Demographic -> Age_Group
+	Inventory_Levels -> Product
+	Inventory_Levels -> Tijd
+	Product_Forecast -> Product
+	Product_Forecast -> Tijd
+	Satisfaction -> Sales_Staff
+	Satisfaction -> Satisfaction_Type
+	Satisfaction -> Tijd
+	Retailer_Headquarters -> Retailer
+	Retailer -> Retailer_Type
+	Retailer_Type -> Retailer_Segment
+	Country -> Sales_Territory
+	Product -> Product_Type
+	Product_Type -> Product_Line
+	Sales_Staff -> Sales_Branch
+	Sales_Staff -> Course
+	Order_Header -> Order_Method
+}
