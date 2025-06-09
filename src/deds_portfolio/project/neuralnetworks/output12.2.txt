@@ -1,0 +1,2029 @@
+Korte Conclusie: Netwerkprestaties voor Cijfers & Letters (5x5 pixels)
+
+Voor het herkennen van cijfers (1-9) en letters (A-Z) met 5x5 pixelplaatjes (25 input nodes), 
+bleek deze inputdimensie voldoende om de error significant te verlagen. 
+
+ 35 output nodes (9 cijfers + 26 letters).
+
+Hidden Nodes & Iteraties:
+
+8 hidden nodes waren te weinig; de error bleef te hoog.
+50 hidden nodes gaf na 1000 epochs een error van 0.020, en na 5000 epochs zakte de error naar 0.013. Dit was de beste prestatie.
+80 hidden nodes was na 1000 epochs iets minder goed dan 50 (0.021 vs 0.020).
+De ideale setup voor deze data en ons model bleek dus ongeveer 50 hidden nodes en 5000 iteraties te zijn voor de laagste error.
+
+--- Training gestart ---
+Epoch 0, Error: 0.57510149
+Epoch 100, Error: 0.03038799
+Epoch 200, Error: 0.02730312
+Epoch 300, Error: 0.02612718
+Epoch 400, Error: 0.02607990
+Epoch 500, Error: 0.02573069
+Epoch 600, Error: 0.02420958
+Epoch 700, Error: 0.02306831
+Epoch 800, Error: 0.02221015
+Epoch 900, Error: 0.02113998
+Epoch 1000, Error: 0.02019951
+Epoch 1100, Error: 0.01999685
+Epoch 1200, Error: 0.01913722
+Epoch 1300, Error: 0.01894790
+Epoch 1400, Error: 0.01810363
+Epoch 1500, Error: 0.01727470
+Epoch 1600, Error: 0.01673062
+Epoch 1700, Error: 0.01638331
+Epoch 1800, Error: 0.01613083
+Epoch 1900, Error: 0.01593444
+Epoch 2000, Error: 0.01577556
+Epoch 2100, Error: 0.01564405
+Epoch 2200, Error: 0.01553425
+Epoch 2300, Error: 0.01544382
+Epoch 2400, Error: 0.01537584
+Epoch 2500, Error: 0.01537465
+Epoch 2600, Error: 0.01511596
+Epoch 2700, Error: 0.01433289
+Epoch 2800, Error: 0.01401275
+Epoch 2900, Error: 0.01384487
+Epoch 3000, Error: 0.01372414
+Epoch 3100, Error: 0.01362772
+Epoch 3200, Error: 0.01354654
+Epoch 3300, Error: 0.01347602
+Epoch 3400, Error: 0.01341349
+Epoch 3500, Error: 0.01335723
+Epoch 3600, Error: 0.01330607
+Epoch 3700, Error: 0.01325916
+Epoch 3800, Error: 0.01321586
+Epoch 3900, Error: 0.01317569
+Epoch 4000, Error: 0.01313825
+Epoch 4100, Error: 0.01310322
+Epoch 4200, Error: 0.01307033
+Epoch 4300, Error: 0.01303937
+Epoch 4400, Error: 0.01301015
+Epoch 4500, Error: 0.01298251
+Epoch 4600, Error: 0.01295631
+Epoch 4700, Error: 0.01293144
+Epoch 4800, Error: 0.01290779
+Epoch 4900, Error: 0.01288527
+--- Training voltooid ---
+
+
+Test 2e training afbeelding
+--- Training gestart ---
+Epoch 0, Error: 0.50277744
+Epoch 100, Error: 0.03879515
+Epoch 200, Error: 0.03539092
+Epoch 300, Error: 0.03050739
+Epoch 400, Error: 0.02835827
+Epoch 500, Error: 0.02687263
+Epoch 600, Error: 0.02329028
+Epoch 700, Error: 0.02206385
+Epoch 800, Error: 0.02151807
+Epoch 900, Error: 0.02206615
+--- Training voltooid ---
+
+
+Test 3e training afbeelding
+--- Training gestart ---
+Epoch 0, Error: 0.37510899
+Epoch 100, Error: 0.02932150
+Epoch 200, Error: 0.02604800
+Epoch 300, Error: 0.02506102
+Epoch 400, Error: 0.02394814
+Epoch 500, Error: 0.02293823
+Epoch 600, Error: 0.02260602
+Epoch 700, Error: 0.02244030
+Epoch 800, Error: 0.02181625
+Epoch 900, Error: 0.02177527
+--- Training voltooid ---
+
+--- Resultaten na training ---
+
+Input array: [0 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 1 0]
+Predicted Output Array: [0.98 0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.02 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 1
+------------------------------
+
+Input array: [0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0]
+Predicted Output Array: [0.98 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 1
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: L
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: I
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.01 0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.96 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 3
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.97 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 3
+------------------------------
+
+Input array: [0 0 1 0 0 0 1 1 0 0 1 0 1 0 0 1 1 1 1 1 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.98 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.01 0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 4
+Expected Label: 4
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 1 0 0 1 1 1 1 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.01 0.   0.   0.02 0.  ]
+Expected Output Array: [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Y
+Expected Label: 4
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.97 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 5
+Expected Label: 5
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.98 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 5
+Expected Label: 5
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: G
+Expected Label: 6
+------------------------------
+
+Input array: [0 0 1 1 0 0 1 0 0 0 0 1 1 1 0 0 1 0 0 1 0 0 1 1 0]
+Predicted Output Array: [0.01 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 6
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0]
+Predicted Output Array: [0.   0.   0.01 0.   0.   0.   0.99 0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.02]
+Expected Output Array: [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 7
+Expected Label: 7
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.98 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.01
+ 0.01 0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 7
+Expected Label: 7
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.03 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 8
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 1 0 1 0 1 1 1 0 1 0 1 0 1 0 1 1 1 0]
+Predicted Output Array: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Expected Output Array: [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: I
+Expected Label: 8
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 1 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.02 0.   0.   0.   0.   0.   0.98 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 9
+Expected Label: 9
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 0 0 0 0 1 0 0 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.98 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 9
+Expected Label: 9
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 1 1 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Q
+Expected Label: A
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 1 0 1 0 1 1 0 1 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Q
+Expected Label: A
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: D
+Expected Label: B
+------------------------------
+
+Input array: [1 1 1 0 0 1 0 0 1 0 1 1 1 0 0 1 0 0 1 0 1 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: D
+Expected Label: B
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: O
+Expected Label: C
+------------------------------
+
+Input array: [0 1 1 1 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 1 1]
+Predicted Output Array: [0.01 0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: C
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.97 0.
+ 0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: D
+Expected Label: D
+------------------------------
+
+Input array: [1 1 1 0 0 1 0 0 1 0 1 0 0 1 0 1 0 0 1 0 1 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.98 0.
+ 0.   0.01 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.01 0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: D
+Expected Label: D
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 5
+Expected Label: E
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 0 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: D
+Expected Label: E
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.01 0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 7
+Expected Label: F
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: F
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 1 1 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.02 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.97 0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: G
+Expected Label: G
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.01 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.98 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: G
+Expected Label: G
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 1 1 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.01 0.02 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: N
+Expected Label: H
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 0 1 1 1 0 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: H
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.97 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.01 0.   0.   0.   0.   0.   0.02]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: I
+Expected Label: I
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 1 0]
+Predicted Output Array: [0.01 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.98 0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.02 0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: I
+Expected Label: I
+------------------------------
+
+Input array: [0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.98 0.   0.01 0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.02 0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: J
+Expected Label: J
+------------------------------
+
+Input array: [0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 1 0 0 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.99 0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.01 0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: J
+Expected Label: J
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 1 0 1 1 1 0 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.98 0.   0.01 0.   0.   0.   0.   0.   0.
+ 0.   0.   0.01 0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: K
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 1 0 0 1 1 0 0 0 1 0 1 0 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.98 0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: K
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.01 0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.   0.   0.01 0.98 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: L
+Expected Label: L
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 1 1]
+Predicted Output Array: [0.01 0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.98 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: L
+Expected Label: L
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 1 1 1 0 1 0 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.98 0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: M
+Expected Label: M
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 1 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.01 0.   0.01 0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.98 0.02 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: M
+Expected Label: M
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 0 1 1 0 1 0 1 1 0 0 1 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.01 0.98 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: N
+Expected Label: N
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 0 1 1 0 0 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.   0.01 0.97 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: N
+Expected Label: N
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.
+ 0.   0.01 0.   0.   0.01 0.   0.   0.   0.   0.97 0.   0.01 0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: O
+Expected Label: O
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.
+ 0.   0.01 0.   0.   0.01 0.   0.   0.   0.   0.97 0.   0.01 0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: O
+Expected Label: O
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.01 0.   0.01 0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 7
+Expected Label: P
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 7
+Expected Label: P
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 1 0 0 1 1 0 1]
+Predicted Output Array: [0.   0.   0.   0.01 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.02 0.   0.98 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]
+Predicted Label: Q
+Expected Label: Q
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 1 0 1 1 0 0 1 0 0 1 1 0 1]
+Predicted Output Array: [0.   0.   0.   0.01 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.97 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]
+Predicted Label: Q
+Expected Label: Q
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0]
+Predicted Label: D
+Expected Label: R
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: R
+------------------------------
+
+Input array: [0 1 1 1 1 1 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0]
+Predicted Label: 5
+Expected Label: S
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 0 0 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.02 0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0]
+Predicted Label: 5
+Expected Label: S
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.98 0.   0.   0.01 0.   0.01 0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0]
+Predicted Label: T
+Expected Label: T
+------------------------------
+
+Input array: [1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.98 0.   0.   0.   0.   0.02 0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0]
+Predicted Label: T
+Expected Label: T
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.98 0.01 0.02 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0]
+Predicted Label: U
+Expected Label: U
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.01 0.01 0.   0.01 0.   0.   0.   0.
+ 0.   0.98 0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0]
+Predicted Label: U
+Expected Label: U
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 0 1 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.98 0.01 0.   0.01 0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0]
+Predicted Label: V
+Expected Label: V
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.98 0.   0.   0.01 0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0]
+Predicted Label: V
+Expected Label: V
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 1 0 1 1 1 0 1 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.01 0.97 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0]
+Predicted Label: W
+Expected Label: W
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 1 0 1 1 0 1 0 1 0 1 0 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.02 0.   0.98 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0]
+Predicted Label: W
+Expected Label: W
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.01 0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.01 0.   0.   0.01 0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0]
+Predicted Label: Y
+Expected Label: X
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.01 0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.01 0.   0.   0.01 0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0]
+Predicted Label: M
+Expected Label: X
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.02 0.   0.   0.   0.   0.97 0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0]
+Predicted Label: Y
+Expected Label: Y
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.01 0.   0.   0.98 0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0]
+Predicted Label: Y
+Expected Label: Y
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.98]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]
+Predicted Label: Z
+Expected Label: Z
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.01 0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.01 0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.97]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]
+Predicted Label: Z
+Expected Label: Z
+------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--- Resultaten na training --- 2E TRAINING
+
+Input array: [0 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 1 0]
+Predicted Output Array: [0.89 0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.04 0.03 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 1
+------------------------------
+
+Input array: [0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0]
+Predicted Output Array: [0.89 0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.04 0.03 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 1
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.02]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.03]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: 3
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.04 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 3
+------------------------------
+
+Input array: [0 0 1 0 0 0 1 1 0 0 1 0 1 0 0 1 1 1 1 1 0 0 1 0 0]
+Predicted Output Array: [0.1  0.   0.01 0.91 0.01 0.   0.01 0.   0.   0.   0.03 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.09 0.   0.   0.
+ 0.01 0.   0.   0.04 0.   0.01 0.  ]
+Expected Output Array: [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 4
+Expected Label: 4
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 1 0 0 1 1 1 1 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.07 0.   0.   0.91 0.01 0.   0.   0.   0.   0.   0.02 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.06 0.   0.   0.   0.   0.2  0.   0.   0.
+ 0.05 0.   0.   0.03 0.   0.   0.  ]
+Expected Output Array: [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 4
+Expected Label: 4
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.05
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: E
+Expected Label: 5
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.07
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: E
+Expected Label: 5
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.05 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: 6
+------------------------------
+
+Input array: [0 0 1 1 0 0 1 0 0 0 0 1 1 1 0 0 1 0 0 1 0 0 1 1 0]
+Predicted Output Array: [0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 6
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0]
+Predicted Output Array: [0.   0.01 0.02 0.01 0.01 0.   0.9  0.02 0.   0.   0.01 0.03 0.01 0.
+ 0.01 0.01 0.   0.   0.05 0.   0.01 0.   0.05 0.   0.01 0.01 0.   0.02
+ 0.03 0.02 0.   0.01 0.02 0.01 0.01]
+Expected Output Array: [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 7
+Expected Label: 7
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.04
+ 0.1  0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.01 0.   0.   0.   0.04 0.   0.09]
+Expected Output Array: [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: F
+Expected Label: 7
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: 8
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 1 0 1 0 1 1 1 0 1 0 1 0 1 0 1 1 1 0]
+Predicted Output Array: [0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 8
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 1 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 9
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 0 0 0 0 1 0 0 1 1 0 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 9
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 1 1 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: A
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 1 0 1 0 1 1 0 1 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: A
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: B
+------------------------------
+
+Input array: [1 1 1 0 0 1 0 0 1 0 1 1 1 0 0 1 0 0 1 0 1 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: B
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.91 0.   0.02
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.01 0.   0.   0.
+ 0.   0.05 0.   0.04 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: C
+Expected Label: C
+------------------------------
+
+Input array: [0 1 1 1 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.04 0.   0.   0.   0.   0.96 0.   0.08
+ 0.02 0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.02 0.01 0.   0.
+ 0.   0.05 0.   0.   0.   0.   0.03]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: C
+Expected Label: C
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: E
+Expected Label: D
+------------------------------
+
+Input array: [1 1 1 0 0 1 0 0 1 0 1 0 0 1 0 1 0 0 1 0 1 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: E
+Expected Label: D
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.87
+ 0.   0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.04]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: E
+Expected Label: E
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 0 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.88
+ 0.   0.   0.   0.03 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.05]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: E
+Expected Label: E
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.06
+ 0.84 0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.18 0.01 0.   0.
+ 0.03 0.   0.   0.   0.01 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: F
+Expected Label: F
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.04 0.   0.09
+ 0.87 0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.14 0.01 0.   0.
+ 0.04 0.   0.   0.   0.01 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: F
+Expected Label: F
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 1 1 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: G
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.05 0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: G
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 1 1 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: H
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 0 1 1 1 0 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.01 0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: H
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 1 1 1 1 1]
+Predicted Output Array: [0.03 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.06
+ 0.   0.   0.   0.93 0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.03 0.02 0.   0.   0.   0.   0.04]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: I
+Expected Label: I
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 1 0]
+Predicted Output Array: [0.05 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04
+ 0.   0.   0.   0.89 0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.02 0.02 0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: I
+Expected Label: I
+------------------------------
+
+Input array: [0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.05 0.   0.   0.   0.   0.   0.03 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.02 0.92 0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.06 0.   0.03 0.   0.   0.06]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: J
+Expected Label: J
+------------------------------
+
+Input array: [0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 1 0 0 1 1 0 0]
+Predicted Output Array: [0.07 0.   0.   0.   0.   0.   0.03 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.02 0.94 0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.03 0.   0.03 0.   0.   0.07]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: J
+Expected Label: J
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 1 0 1 1 1 0 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.01 0.   0.   0.   0.   0.91 0.   0.   0.02 0.   0.07 0.   0.   0.
+ 0.   0.   0.   0.   0.05 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: K
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 1 0 0 1 1 0 0 0 1 0 1 0 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.01 0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.97 0.   0.   0.01 0.   0.01 0.   0.   0.
+ 0.03 0.   0.   0.   0.05 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: K
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.04 0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: X
+Expected Label: L
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03
+ 0.   0.   0.   0.02 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.04 0.   0.   0.01 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: U
+Expected Label: L
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 1 1 1 0 1 0 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.03 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: K
+Expected Label: M
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 1 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.02 0.   0.   0.03 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.03 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: X
+Expected Label: M
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 0 1 1 0 1 0 1 1 0 0 1 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.02 0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.95 0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.01 0.04 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: N
+Expected Label: N
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 0 1 1 0 0 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.02 0.   0.
+ 0.   0.   0.   0.   0.   0.04 0.   0.   0.97 0.   0.05 0.   0.   0.
+ 0.   0.   0.   0.01 0.05 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: N
+Expected Label: N
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: C
+Expected Label: O
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: C
+Expected Label: O
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.08 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.1  0.   0.   0.   0.   0.01 0.   0.   0.01 0.   0.73 0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: P
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.07 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.12 0.   0.   0.   0.   0.01 0.   0.   0.01 0.   0.72 0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: P
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 1 0 0 1 1 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.04]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: Q
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 1 0 1 1 0 0 1 0 0 1 1 0 1]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: Q
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+ 0.  0.  0.  0.  0.  0.  0.1 0.  0.  0.  0.  0.  0.  0.  0.  0.  0. ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: R
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.11 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: R
+------------------------------
+
+Input array: [0 1 1 1 1 1 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: S
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 0 0 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: S
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.01 0.   0.03 0.   0.   0.04 0.   0.   0.   0.01 0.   0.   0.02
+ 0.02 0.   0.   0.08 0.   0.03 0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.94 0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0]
+Predicted Label: T
+Expected Label: T
+------------------------------
+
+Input array: [1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.01 0.   0.02 0.   0.   0.04 0.   0.   0.   0.01 0.   0.   0.01
+ 0.02 0.   0.   0.05 0.   0.02 0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.92 0.   0.   0.   0.01 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0]
+Predicted Label: T
+Expected Label: T
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.03 0.   0.01
+ 0.   0.   0.   0.05 0.06 0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.9  0.   0.06 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0]
+Predicted Label: U
+Expected Label: U
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.04 0.   0.02
+ 0.   0.   0.   0.05 0.05 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.89 0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0]
+Predicted Label: U
+Expected Label: U
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 0 1 0 0 0 1 0 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.03 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0]
+Predicted Label: W
+Expected Label: V
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 1 0 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.02 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0]
+Predicted Label: W
+Expected Label: V
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 1 0 1 1 1 0 1 1 0 1 1 1 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.01 0.   0.   0.01
+ 0.   0.06 0.   0.92 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0]
+Predicted Label: W
+Expected Label: W
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 1 0 1 1 0 1 0 1 0 1 0 1 0]
+Predicted Output Array: [0.01 0.   0.   0.03 0.   0.   0.02 0.   0.   0.   0.01 0.01 0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.   0.   0.03 0.   0.03 0.   0.   0.01
+ 0.   0.05 0.   0.94 0.   0.01 0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0]
+Predicted Label: W
+Expected Label: W
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.89 0.   0.08]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0]
+Predicted Label: X
+Expected Label: X
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.94 0.   0.05]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0]
+Predicted Label: X
+Expected Label: X
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.02 0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.03 0.   0.   0.   0.03 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0]
+Predicted Label: T
+Expected Label: Y
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.01 0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0]
+Predicted Label: P
+Expected Label: Y
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03
+ 0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.06 0.   0.87]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]
+Predicted Label: Z
+Expected Label: Z
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.05 0.   0.89]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]
+Predicted Label: Z
+Expected Label: Z
+
+
+
+
+
+
+3E TRAINING:
+--- Resultaten na training ---
+
+Input array: [0 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 1 0]
+Predicted Output Array: [0.92 0.   0.01 0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.  ]
+Expected Output Array: [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 1
+------------------------------
+
+Input array: [0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0]
+Predicted Output Array: [0.96 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.02 0.   0.  ]
+Expected Output Array: [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 1
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.01 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 9
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.02]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 0 0 1 0 0 1 1 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.03 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.03]
+Expected Output Array: [0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 2
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 0 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.94 0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.
+ 0.   0.06 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.01 0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 3
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 0 0 1 0 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.92 0.   0.   0.   0.   0.   0.04 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 3
+------------------------------
+
+Input array: [0 0 1 0 0 0 1 1 0 0 1 0 1 0 0 1 1 1 1 1 0 0 1 0 0]
+Predicted Output Array: [0.04 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 4
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 1 0 0 1 1 1 1 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: G
+Expected Label: 4
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Expected Output Array: [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: 5
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Expected Output Array: [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 5
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 0 1 1 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.02 0.   0.   0.   0.
+ 0.   0.06 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: G
+Expected Label: 6
+------------------------------
+
+Input array: [0 0 1 1 0 0 1 0 0 0 0 1 1 1 0 0 1 0 0 1 0 0 1 1 0]
+Predicted Output Array: [0.03 0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: 6
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0]
+Predicted Output Array: [0.   0.   0.01 0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: 7
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: 7
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.07 0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 8
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 1 0 1 0 1 1 1 0 1 0 1 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: 8
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 1 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.02 0.   0.   0.   0.   0.   0.93 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.02 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 9
+Expected Label: 9
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 0 1 1 1 0 0 0 0 1 0 0 1 1 0 0]
+Predicted Output Array: [0.   0.   0.02 0.   0.01 0.   0.   0.   0.96 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 9
+Expected Label: 9
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 1 1 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.93 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: A
+Expected Label: A
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 1 0 1 1 1 1 1 1 1 0 1 0 1 1 0 1 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.95 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: A
+Expected Label: A
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.
+ 0.  0.  0.  0.  0.  0.  0.1 0.  0.  0.  0.  0.  0.  0.  0.  0.  0. ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: B
+------------------------------
+
+Input array: [1 1 1 0 0 1 0 0 1 0 1 1 1 0 0 1 0 0 1 0 1 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: B
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.06 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: C
+------------------------------
+
+Input array: [0 1 1 1 1 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.02]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: C
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: C
+Expected Label: D
+------------------------------
+
+Input array: [1 1 1 0 0 1 0 0 1 0 1 0 0 1 0 1 0 0 1 0 1 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Q
+Expected Label: D
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: L
+Expected Label: E
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 0 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.02]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: E
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 1 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.08 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: F
+------------------------------
+
+Input array: [1 1 1 1 1 1 0 0 0 0 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.09 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: F
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 1 1 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.03 0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.
+ 0.   0.92 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.02 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: G
+Expected Label: G
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 0 1 0 1 1 0 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.95 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: G
+Expected Label: G
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 1 1 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.07 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.03 0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: A
+Expected Label: H
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 0 1 1 1 0 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.03 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: H
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.03]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: Z
+Expected Label: I
+------------------------------
+
+Input array: [0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 1 0]
+Predicted Output Array: [0.06 0.   0.02 0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.01 0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: 1
+Expected Label: I
+------------------------------
+
+Input array: [0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.97 0.   0.   0.   0.   0.   0.   0.   0.   0.01
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: J
+Expected Label: J
+------------------------------
+
+Input array: [0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 1 0 0 1 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.97 0.   0.   0.   0.   0.   0.   0.02 0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: J
+Expected Label: J
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 1 0 1 1 1 0 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: A
+Expected Label: K
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 1 0 0 1 1 0 0 0 1 0 1 0 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.03 0.03 0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: M
+Expected Label: K
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.95 0.   0.01 0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: L
+Expected Label: L
+------------------------------
+
+Input array: [1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.97 0.   0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: L
+Expected Label: L
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 1 1 1 0 1 0 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.88 0.05 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: M
+Expected Label: M
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 1 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.   0.92 0.06 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: M
+Expected Label: M
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 0 1 1 0 1 0 1 1 0 0 1 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.1  0.93 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: N
+Expected Label: N
+------------------------------
+
+Input array: [1 0 0 0 1 1 1 0 0 1 1 0 0 1 1 1 0 0 0 1 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.07 0.95 0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: N
+Expected Label: N
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.1  0.   0.
+ 0.   0.02 0.   0.   0.01 0.   0.   0.   0.   0.   0.01 0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: C
+Expected Label: O
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.1  0.   0.
+ 0.   0.02 0.   0.   0.01 0.   0.   0.   0.   0.   0.01 0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: C
+Expected Label: O
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.82 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: P
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.87 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: P
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 0 0 1 1 0 0 1 0 0 1 1 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.04 0.   0.02 0.   0.01
+ 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.98 0.   0.
+ 0.01 0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]
+Predicted Label: Q
+Expected Label: Q
+------------------------------
+
+Input array: [0 1 1 1 0 1 0 0 0 1 1 0 1 0 1 1 0 0 1 0 0 1 1 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.01 0.   0.01 0.   0.
+ 0.   0.01 0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.96 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]
+Predicted Label: Q
+Expected Label: Q
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 1 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.09 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: R
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 1 1 1 1 0 0 1 0 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.08 0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0]
+Predicted Label: P
+Expected Label: R
+------------------------------
+
+Input array: [0 1 1 1 1 1 0 0 0 0 0 1 1 1 0 0 0 0 0 1 1 1 1 1 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0]
+Predicted Label: 9
+Expected Label: S
+------------------------------
+
+Input array: [1 1 1 1 0 1 0 0 0 0 0 1 1 1 0 0 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.   0.   0.01 0.   0.   0.   0.   0.   0.03 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0]
+Predicted Label: 9
+Expected Label: S
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0]
+Predicted Label: 3
+Expected Label: T
+------------------------------
+
+Input array: [1 1 1 1 1 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0]
+Predicted Label: J
+Expected Label: T
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.02 0.   0.02 0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.04 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0]
+Predicted Label: W
+Expected Label: U
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.01 0.   0.04 0.01 0.02 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0]
+Predicted Label: L
+Expected Label: U
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 0 0 1 0 1 0 1 0 0 0 1 0 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01 0.   0.02 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.03 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0]
+Predicted Label: W
+Expected Label: V
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 1 0 0]
+Predicted Output Array: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+ 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0]
+Predicted Label: P
+Expected Label: V
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 1 0 1 1 1 0 1 1 0 1 1 1 0]
+Predicted Output Array: [0.01 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.06 0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.94 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0]
+Predicted Label: W
+Expected Label: W
+------------------------------
+
+Input array: [1 0 0 0 1 1 0 0 0 1 1 0 1 0 1 1 0 1 0 1 0 1 0 1 0]
+Predicted Output Array: [0.02 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.04 0.   0.
+ 0.   0.02 0.   0.   0.   0.   0.   0.03 0.   0.   0.01 0.   0.   0.
+ 0.   0.   0.   0.99 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0]
+Predicted Label: W
+Expected Label: W
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 1 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.02 0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0]
+Predicted Label: M
+Expected Label: X
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 0 0 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.03 0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.01 0.   0.   0.  ]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0]
+Predicted Label: M
+Expected Label: X
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.03 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.02 0.
+ 0.   0.   0.   0.   0.02 0.   0.   0.03 0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0]
+Predicted Label: 1
+Expected Label: Y
+------------------------------
+
+Input array: [1 0 0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 1 0 0 0 0 1 0 0]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.01 0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.01]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0]
+Predicted Label: Z
+Expected Label: Y
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.95]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]
+Predicted Label: Z
+Expected Label: Z
+------------------------------
+
+Input array: [1 1 1 1 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 1 1 1 1 1]
+Predicted Output Array: [0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.   0.01 0.01 0.   0.   0.   0.   0.
+ 0.   0.   0.   0.   0.   0.   0.97]
+Expected Output Array: [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1]
+Predicted Label: Z
+Expected Label: Z
