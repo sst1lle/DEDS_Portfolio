@@ -398,7 +398,7 @@ def train_and_evaluate(hidden_size1, hidden_size2, learning_rate, epochs, log_fi
 # --- Experimenten uitvoeren ---
 # Experiment 1: Baseline met 2 hidden layers (voorbeeld)
 print("--- STARTING EXPERIMENT 1 ---")
-#train_and_evaluate(hidden_size1=40, hidden_size2=20, learning_rate=0.1, epochs=5000, log_file_path="log_exp1_40_20_5000.txt")
+train_and_evaluate(hidden_size1=40, hidden_size2=20, learning_rate=0.1, epochs=5000, log_file_path="log_exp1_40_20_5000.txt")
 
 # Experiment 2: Minimaal aantal nodes (voorbeeld, hier moet je zelf mee spelen)
 # Begin laag en verhoog geleidelijk totdat correcte voorspellingen worden bereikt
